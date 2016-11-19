@@ -1,0 +1,51 @@
+Name: Pokaml
+Version: 0.1
+Synopsis: Pokemon OCaml webapp
+Authors: Cedric Chantepie 
+License: LGPL with OCaml linking exception
+Description: Zengularity Pokemon homework developed with OCaml
+Homepage: https://github.com/cchantep/pokaml
+SourceRepository master
+  Type: git
+  Location: https://github.com/cchantep/pokaml.git
+  Branch: master
+  Browser: https://github.com/cchantep/pokaml
+
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+AlphaFeatures: ocamlbuild_more_args
+
+Library "pokaml"
+  Path: src
+  Modules: Pokaml 
+  BuildDepends: core, async_ssl, cohttp.async, yojson
+
+Document "pokaml_api"
+  Type: ocamlbuild (0.4)
+  BuildTools: ocamldoc
+  Title: API reference for Pokaml
+  XOCamlbuildPath: .
+  XOCamlbuildExtraArgs:
+    "-docflags '-thread -colorize-code -short-functors -charset utf-8'"
+  XOCamlbuildLibraries: pokaml
+
+Executable "pokaml-prog"
+  Path: prog
+  MainIs: main.ml
+  CompiledObject: best
+  Install: false
+  BuildDepends: pokaml
+
+Executable "test_pokaml"
+  Path: test
+  MainIs: runner.ml
+  Build$: flag(tests)
+  CompiledObject: best
+  Install: false
+  BuildDepends: pokaml, oUnit
+
+Test "test_pokaml"
+  Run$: flag(tests)
+  TestTools: test_pokaml
+  Command: $test_pokaml
