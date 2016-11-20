@@ -2,9 +2,5 @@
 
 cp _tags.dist _tags
 oasis setup
-
-# TODO: Make it better
-DEPS="core async_ssl cohttp yojson ounit"
-opam install $DEPS
-
+opam install ounit
 ./configure --enable-tests
