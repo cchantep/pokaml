@@ -1,0 +1,12 @@
+machine:
+  environment:
+    TRAVIS_OS_NAME: "linux"
+    OCAML_VERSION: "4.04"
+dependencies:
+  pre: 
+    - ./.ci_scripts/beforeInstall.sh
+  cache_directories:
+    - "~/.opam"
+test:
+  override: 
+    - ./.ci_scripts/validate.sh

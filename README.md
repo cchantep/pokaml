@@ -2,7 +2,7 @@
 
 Zengularity [Pokemon homework](https://docs.google.com/a/zenexity.com/document/d/1DZv8v_iCsZiWGbFasBIJoGKQor9CtStwOo4Z21osn1Q/edit?usp=sharing) developed with OCaml.
 
-[![Build Status](https://travis-ci.org/cchantep/pokaml.svg?branch=master)](https://travis-ci.org/cchantep/pokaml)
+[![Build Status](https://travis-ci.org/cchantep/pokaml.svg?branch=master)](https://travis-ci.org/cchantep/pokaml) [![CircleCI](https://circleci.com/gh/cchantep/pokaml.svg?style=svg)](https://circleci.com/gh/cchantep/pokaml)
 
 ## Build
 
