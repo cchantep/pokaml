@@ -1,7 +1,8 @@
 Name: Pokaml
 Version: 0.1
 Synopsis: Pokemon OCaml webapp
-Authors: Cedric Chantepie 
+Authors: "Cedric Chantepie <cchantep@users.noreply.github.com>"
+Maintainers: "Cedric Chantepie <cchantep@users.noreply.github.com>"
 License: LGPL with OCaml linking exception
 Description: Zengularity Pokemon homework developed with OCaml
 Homepage: https://github.com/cchantep/pokaml
