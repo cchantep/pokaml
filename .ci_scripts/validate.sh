@@ -13,7 +13,7 @@ cd ${TMP_BUILD}
 export OPAMYES=1
 eval $(opam config env)
 
-cd "$OLDPWD"
+cd "$OLDPWD/server"
 
 # Register in OPAM and resolve deps
 opam pin add pokaml . && \

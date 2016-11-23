@@ -2,6 +2,8 @@ open Core.Std
 open Async.Std
 open Cohttp_async
 
+open Foo
+
 let start_server port () =
   eprintf "Listening for HTTP on port %d\n" port;
   eprintf "Try 'curl -X POST -d 'foo bar' http://localhost:%d\n" port;
