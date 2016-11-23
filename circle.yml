@@ -1,7 +1,8 @@
 machine:
   environment:
     TRAVIS_OS_NAME: "linux"
-    OCAML_VERSION: "4.04"
+    OCAML_VERSION: "4.02"
+    OPAM_SWITCH: "4.02.3+buckle-master"
 dependencies:
   pre: 
     - ./.ci_scripts/beforeInstall.sh

@@ -1,0 +1,14 @@
+{
+  "name": "pokaml",
+  "version": "0.0.1",
+  "dependencies": {
+    "bs-platform": "1.3.0"
+  },
+  "directories": {
+    "lib": "../server"
+  },
+  "scripts" : {
+    "prebuild" : "rm -rf src && cp -R ../server/src src",
+    "build" : "bsb"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "pokaml-ui",
+    "version": "0.0.1",
+    "ocaml-config": {
+        "sources": [
+            {
+                "dir": "src",
+                "public" : "all",
+                "files": [
+                    "hello.ml"
+                ],
+                "bs-dependencies" : ["pokaml"]
+            }
+        ]
+    }
+}

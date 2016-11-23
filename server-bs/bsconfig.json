@@ -1,0 +1,15 @@
+{
+    "name": "pokaml",
+    "version": "0.0.1",
+    "ocaml-config": {
+        "sources": [
+            {
+                "dir": "src",
+                "public" : "all",
+                "files": [
+                    "foo.ml"
+                ]
+            }
+        ]
+    }
+}

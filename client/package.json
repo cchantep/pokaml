@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bs-platform": "1.3.0",
+    "pokaml": "file:../server-bs"
+  },
+  "scripts" : {
+    "build" : "bsb"
+  }
+}

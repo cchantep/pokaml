@@ -1,5 +1,5 @@
 Name: Pokaml
-Version: 0.1
+Version: 0.0.1
 Synopsis: Pokemon OCaml webapp
 Authors: "Cedric Chantepie <cchantep@users.noreply.github.com>"
 Maintainers: "Cedric Chantepie <cchantep@users.noreply.github.com>"
@@ -19,7 +19,7 @@ AlphaFeatures: ocamlbuild_more_args
 
 Library "pokaml"
   Path: src
-  Modules: Pokaml 
+  Modules: Foo, Pokaml 
   BuildDepends: core, async_ssl, cohttp.async, yojson
 
 Document "pokaml_api"
