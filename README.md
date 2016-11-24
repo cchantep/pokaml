@@ -20,6 +20,10 @@ Zengularity [Pokemon homework](https://docs.google.com/a/zenexity.com/document/d
 
     make
 
+**Watch**
+
+    ./watch # Require nodemon
+
 ## Test
 
 The test suites are executed using oUnit runner:

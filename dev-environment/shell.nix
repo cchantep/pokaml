@@ -8,6 +8,7 @@ with import <nixpkgs> {}; {
       libffi
       pkgconfig
       opam
+      nodePackages.nodemon
       # ocaml
       # ocamlPackages.ocaml_oasis
       # ocamlPackages.ounit
