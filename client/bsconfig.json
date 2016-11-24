@@ -12,7 +12,7 @@
                 "dir": "src",
                 "public" : "all",
                 "files": [
-                    "hello.ml"
+                    "main.ml"
                 ]
             }
         ]
