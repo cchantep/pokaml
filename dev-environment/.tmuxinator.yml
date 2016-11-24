@@ -1,0 +1,12 @@
+name: pokaml
+
+windows:
+  - main:
+      layout: fff4,119x58,0,0{94x58,0,0,0,24x58,95,0,1}
+      panes:
+        - cd ..
+        - server:
+          - cd ../server
+          - ../dev-environment/setup
+          - eval `opam config env`
+          - make

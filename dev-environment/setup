@@ -1,0 +1,15 @@
+#!/bin/sh
+
+opam init --comp=4.03.0 --no-setup
+eval `opam config env`
+opam install --yes ounit oasis async_ssl core cohttp yojson
+oasis setup
+./configure --enable-tests
+
+# opam init --no-setup
+# eval `opam config env`
+# oasis setup
+# opam install --yes oasis2opam
+# oasis2opam --local -y
+# opam pin --yes add pokaml .
+# ./configure --enable-tests
