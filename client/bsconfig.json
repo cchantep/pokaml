@@ -4,12 +4,16 @@
     "ocaml-config": {
         "sources": [
             {
+              "dir": "shared",
+              "public": "all",
+              "files": ["foo.ml", "bar.ml"]
+            },
+            {
                 "dir": "src",
                 "public" : "all",
                 "files": [
                     "hello.ml"
-                ],
-                "bs-dependencies" : ["pokaml"]
+                ]
             }
         ]
     }
