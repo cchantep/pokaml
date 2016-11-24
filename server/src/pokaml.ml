@@ -11,9 +11,9 @@ let start_server port () =
     (Tcp.on_port port) (fun ~body _ req ->
       match req |> Cohttp.Request.meth with
       | `POST ->
-        (Body.to_string body) >>= (fun body ->
-          Log.Global.info "Body: %s" body;
-          Server.respond `OK)
+         (Body.to_string body) >>= (fun body ->
+                                    (* Log.Global.info "Body: %s" body; *)
+          Server.respond_with_string ~code:`OK body)
       | _ -> Server.respond `Method_not_allowed
     )
->>= fun _ -> Deferred.never ()
+  >>= fun _ -> Deferred.never ()
