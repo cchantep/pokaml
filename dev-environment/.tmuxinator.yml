@@ -9,4 +9,4 @@ windows:
           - cd ../server
           - ../dev-environment/setup
           - eval `opam config env`
-          - make
+          - ./watch

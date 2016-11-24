@@ -1,0 +1,2 @@
+#!/bin/sh
+nodemon --watch src --ext ml --exec 'clear && make && ./main.native'
