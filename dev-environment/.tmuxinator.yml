@@ -2,7 +2,7 @@ name: pokaml
 
 windows:
   - main:
-      layout: fff4,119x58,0,0{94x58,0,0,0,24x58,95,0,1}
+      layout: 3747,239x59,0,0{144x59,0,0,0,94x59,145,0[94x30,145,0,1,94x28,145,31,2]}
       panes:
         - cd ..
         - server:
@@ -10,3 +10,8 @@ windows:
           - ../dev-environment/setup
           - eval `opam config env`
           - ./watch
+        - client:
+          - cd ../client
+          - npm install
+          - eval `opam config env`
+          - npm run prebuild && npm run build
